@@ -35,7 +35,7 @@ test("renders non-empty contrats message when `success`prop is true", () => {
 
 test("does not throw warning with expecting props", () => {
   const expectedProps = { sucess: false };
-  // checkProps(Congrats, expectedProps);
+  //checkProps(Congrats, expectedProps);
   const wrapper = setup({ success: false });
   checkProps(wrapper, expectedProps);
 });
