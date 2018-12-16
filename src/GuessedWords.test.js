@@ -4,7 +4,7 @@ import {findByTestAttr, checkProps} from '../test/testUtils';
 import GuessedWords from './GuessedWords';
 
 const defaultProps = {
-    guessedWords: [{guessedWord: 'train', leeterMatchCount:3}],
+    guessedWords: [{guessedWord: 'train', letterMatchCount:3}],
 };
 
 const setup = (props={}) => {
@@ -34,9 +34,9 @@ describe('if there are no words guessed', () => {
 
 describe('if there are words guessed', () => {
     const guessedWords = [
-        {guessedWord: 'train', leeterMatchCount: 3},
-        {guessedWord: 'agile', leeterMatchCount: 1},
-        {guessedWord: 'party', leeterMatchCount: 5}
+        {guessedWord: 'train', letterMatchCount: 3},
+        {guessedWord: 'agile', letterMatchCount: 1},
+        {guessedWord: 'party', letterMatchCount: 5}
     ];
 
     let wrapper;
